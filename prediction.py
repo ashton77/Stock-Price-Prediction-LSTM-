@@ -21,7 +21,7 @@ from sklearn.metrics import mean_absolute_error
 from keras.models import Sequential, load_model
 from keras.layers import LSTM
 from keras.layers import Dense, Dropout, TimeDistributed, Flatten, RepeatVector
-from LSTM_encoder_decoder.code import lstm_encoder_decoder
+import pickle
 
 scaler = StandardScaler()
 
@@ -133,6 +133,9 @@ def main():
     # plt.plot(history.history['val_loss'], label ='Validation Loss')
     # plt.legend()
     # plt.show()
+    # pickle.dump(model, open('P:/BDBA/SEM_4/Analytics_4/Stock_prediction/LSTM_E_D_model_2.pkl', 'wb'))
+
+    # model = pickle.load(open('P:/BDBA/SEM_4/Analytics_4/Stock_prediction/LSTM_E_D_model_2.pkl', 'rb'))
     model.save('P:/BDBA/SEM_4/Analytics_4/LSTM_E_D_model_2.h5')
 
     pred_y = model.predict(test_X)
