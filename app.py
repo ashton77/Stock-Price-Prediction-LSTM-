@@ -7,13 +7,12 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
-from keras.models import Sequential, load_model
+from tensorflow.keras.models import load_model
 # from keras.layers import LSTM
 # from keras.layers import Dense, Dropout, TimeDistributed, Flatten, RepeatVector
 # from keras.layers.core import Activation, RepeatVector
 from flask import Flask, request, jsonify, render_template, Markup, send_file
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
-import base64
 
 fig, ax = plt.subplots(figsize=(6,6))
 ax= sns.set_style(style="darkgrid")
