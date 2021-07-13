@@ -1,23 +1,14 @@
-from operator import inv
-import re
 import json
 from io import StringIO, BytesIO
-from threading import active_count
-from bs4 import BeautifulSoup
 from numpy.lib.npyio import load
 from pandas.core.indexes import period
-import requests
 import csv
-from math import ceil
 import pandas as pd
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
-from statsmodels.tsa.vector_ar.vecm import coint_johansen, CointRankResults, select_coint_rank
-from bokeh.plotting import figure, show
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_absolute_error
 from keras.models import Sequential, load_model
 # from keras.layers import LSTM
 # from keras.layers import Dense, Dropout, TimeDistributed, Flatten, RepeatVector
