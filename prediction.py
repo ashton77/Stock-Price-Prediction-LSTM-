@@ -5,6 +5,7 @@ from io import StringIO
 from threading import active_count
 from bs4 import BeautifulSoup
 from keras.layers.core import Activation, RepeatVector
+from numpy.lib.npyio import load
 from pandas.core.indexes import period
 import requests
 import csv
@@ -136,7 +137,9 @@ def main():
     # pickle.dump(model, open('P:/BDBA/SEM_4/Analytics_4/Stock_prediction/LSTM_E_D_model_2.pkl', 'wb'))
 
     # model = pickle.load(open('P:/BDBA/SEM_4/Analytics_4/Stock_prediction/LSTM_E_D_model_2.pkl', 'rb'))
-    model.save('P:/BDBA/SEM_4/Analytics_4/LSTM_E_D_model_2.h5')
+    model.save('P:/BDBA/SEM_4/Analytics_4/Stock_prediction/LSTM_E_D_model_2.h5')
+
+    model = load_model('P:/BDBA/SEM_4/Analytics_4/Stock_prediction/LSTM_E_D_model_2.h5')
 
     pred_y = model.predict(test_X)
 
