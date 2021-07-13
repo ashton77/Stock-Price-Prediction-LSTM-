@@ -44,7 +44,8 @@ scaler = StandardScaler()
 #     return data_df
 
 def get_data():
-    data = pd.read_csv('P:/BDBA/SEM_4/Analytics_4/Stock_prediction/AAPL.csv')
+    # data = pd.read_csv('P:/BDBA/SEM_4/Analytics_4/Stock_prediction/AAPL.csv')
+    data = pd.read_csv('https://github.com/ashton77/Stock-Price-Prediction-LSTM-/blob/69df1b6cf917eb46823371e08322a0bea669e444/AAPL.csv')
     data.set_index('Date', inplace=True, drop=True)
     data.index = pd.to_datetime(data.index)
     data['Open'] = data['Open'].astype('float')
