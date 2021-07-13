@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Stock Prediction</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.4.1/dist/chart.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="lineChart"></div>
+        <script>
+            var getData = $.get('/predict');
+
+            getData.done(function(results) {
+                
+                var data = {
+                    labels: [labels.labels],
+
+                    series: [
+                        values.values
+                    ]
+                };
+
+                    var options = {
+                        width : 800,
+                        height : 600
+                    }
+                var myChart = new Chartist.Line('.lineChart', data, options);
+
+            });
+        </script>
+    </body>
+</html>

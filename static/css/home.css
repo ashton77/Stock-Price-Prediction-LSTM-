@@ -1,0 +1,43 @@
+h1 { color: #111; 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 100px;
+    font-weight: bold; 
+    letter-spacing: -1px; 
+    line-height: 1; 
+    text-align: center; }
+
+a { color: #ff9900; 
+    background: #fff4a3; 
+    text-decoration: none; }
+
+
+a:hover { color: #ffcc66 }
+
+.pred {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 16px;
+    display: block;
+    margin: auto;
+    /* margin-left: auto; */
+}
+
+.container {
+    height: 200px;
+    position: relative;
+    /* border: 3px solid green; */
+    text-align: center;
+  }
+  
+.vertical-center {
+margin: 0;
+position: absolute;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+}

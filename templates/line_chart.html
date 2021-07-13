@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <link type="text/css" rel="stylesheet" 
+        href="{{ url_for('static', filename='css/line_chart.css') }}">
+        <title>Stock Prediction</title>
+    </head>
+    <body>
+        <h1>Stock Prediction</h1>
+        <div class="divi">
+        <img src="{{ url_for('predict') }}">
+        </div>
+    </body>
+</html>

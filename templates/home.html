@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Stock Prediction</title>
+        <link type="text/css" rel="stylesheet" 
+        href="{{ url_for('static', filename='css/home.css') }}">
+    </head>
+    <body>
+        <h1>Stock Price Prediction for Apple Inc.</h1>
+        <div class="container">
+            <a href="{{ url_for('pred') }}">
+            <button type="button" name="Predict" class="pred" id="pred">Predict</button>
+            </a>
+        </div>
+    </body>
+</html>
