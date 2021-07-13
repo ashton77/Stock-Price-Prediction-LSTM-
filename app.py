@@ -44,7 +44,6 @@ scaler = StandardScaler()
 #     return data_df
 
 def get_data():
-    # data = pd.read_csv('P:/BDBA/SEM_4/Analytics_4/Stock_prediction/AAPL.csv')
     data = pd.read_csv('https://raw.githubusercontent.com/ashton77/Stock-Price-Prediction-LSTM-/master/AAPL.csv', sep=",")
     data.set_index('Date', inplace=True, drop=True)
     data.index = pd.to_datetime(data.index)
@@ -102,7 +101,6 @@ def predict():
 
     train_X, test_X, train_y, test_y = train_test_split(features, target, test_size = 0.2, shuffle=False, stratify=None)
     
-    # model = load_model('P:/BDBA/SEM_4/Analytics_4/Stock_prediction/LSTM_E_D_model_1.h5')
     model = load_model('LSTM_E_D_model_1.h5')
 
 
