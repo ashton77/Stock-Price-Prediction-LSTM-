@@ -141,9 +141,10 @@ def predict():
     # line_values=values
     # return jsonify({'labels' : labels, 'values': values})
 
-    sns.lineplot(labels, values)
+    ax = sns.lineplot(labels, values)
     pred_point = main_data.Date[-1]
     plt.axvline(x=pred_point, color='blue', linestyle='--')
+    ax.yaxis.set_major_formatter('${x:1.0f}')
     canvas=FigureCanvas(fig)
     img=BytesIO()
     fig.savefig(img)
