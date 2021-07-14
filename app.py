@@ -125,7 +125,7 @@ def predict():
     main_data['Close'] = data_df['Close']
     main_data['Date'] = data_df_date
     # print(main_data)
-    main_data = main_data.loc[main_data['Date'] >= '2019-01-01']
+    main_data = main_data.loc[main_data['Date'] >= '2020-01-01']
 
     # print(main_data)
 

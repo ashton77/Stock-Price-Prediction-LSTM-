@@ -8,9 +8,13 @@
     <body>
         <h1>Stock Price Prediction for Apple Inc.</h1>
         <div class="container">
-            <a href="{{ url_for('pred') }}">
-            <button type="button" name="Predict" class="pred" id="pred">Predict</button>
-            </a>
+            <button id="pred" class="pred">Predict</button>
+            <script>
+                document.getElementById("pred").addEventListener("click", myFunction);
+                function myFunction() {
+                window.location.href="{{ url_for('pred') }}";
+                }
+            </script>
         </div>
     </body>
 </html>

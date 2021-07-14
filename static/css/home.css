@@ -1,12 +1,13 @@
 h1 { color: #111; 
-    font-family: 'Helvetica Neue', sans-serif; 
+    /* font-family: 'Helvetica Neue', sans-serif;  */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 100px;
     font-weight: bold; 
     letter-spacing: -1px; 
     line-height: 1; 
     text-align: center; }
 
-a { color: #ff9900; 
+.anc { color: #ff9900; 
     background: #fff4a3; 
     text-decoration: none; }
 
@@ -14,6 +15,7 @@ a { color: #ff9900;
 a:hover { color: #ffcc66 }
 
 .pred {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
@@ -25,6 +27,11 @@ a:hover { color: #ffcc66 }
     display: block;
     margin: auto;
     /* margin-left: auto; */
+}
+
+.pred:hover{
+    background-color: #000000;
+    /* color: rgb(198, 142, 243) */
 }
 
 .container {
@@ -40,4 +47,8 @@ position: absolute;
 top: 50%;
 -ms-transform: translateY(-50%);
 transform: translateY(-50%);
+}
+
+body{
+    background-image: url('https://img.wallpaper.sc/desktop/images/5k/thumbnail/desktop-pc-1920x1080-thumbnail_00260.jpg') ;
 }

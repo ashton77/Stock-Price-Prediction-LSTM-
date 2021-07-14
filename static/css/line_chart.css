@@ -11,3 +11,17 @@ h1 {
     line-height: 1; 
     text-align: center;
 }
+
+h2 {
+    color: #111; 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 20px; 
+    font-weight: bold; 
+    letter-spacing: -1px; 
+    line-height: 1; 
+    text-align: center;
+}
+
+body{
+    background-image: url('https://img.wallpaper.sc/desktop/images/5k/thumbnail/desktop-pc-1920x1080-thumbnail_00260.jpg') ;
+}
