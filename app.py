@@ -101,7 +101,7 @@ def predict():
 
     train_X, test_X, train_y, test_y = train_test_split(features, target, test_size = 0.2, shuffle=False, stratify=None)
     
-    model = load_model('LSTM_E_D_model_1.h5')
+    model = load_model('LSTM_E_D_model_4.h5')
 
 
     data_df_date = list(data_df.index.values)
